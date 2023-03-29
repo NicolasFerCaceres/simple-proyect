@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html  {
+    font-size: 10px;
+    
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.nav-container {
+
+
+}
+
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.nav-bar-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nav-bar {
+    padding: 40px 0 0;
+    font-size: 2rem;
+    list-style: none;
+    font-weight: 800;
+}
+
+.nav-item {
+    margin: 20px;
+    font-size: 3rem;
+    padding: 5px 0px 5px 10px; 
+}
+
+/*This is to see how looks the butttons*/
+.button {
+    margin: 50px 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.pgm-container {
+
+}
+
+/*This is to hide the other pgm while i work and could see how it will look the final result*/
+
+
+.pgm-container-son {
+    height: 100%;
+    display: none;
+}
+
+
+
+.pgm-title-container {
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.pgm {
+    background: black;
+}
+
+.pgm-container-son.active {
+    display: grid;
+    grid-template-rows: 10% 1fr;
+}
+
+/*Tool and ideas pgm css*/
+
+
+
+
+
