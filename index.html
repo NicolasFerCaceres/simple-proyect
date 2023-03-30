@@ -7,41 +7,62 @@
     <title>Document</title>
     <!--CSS LINK-->
     <link type="text/css" rel="stylesheet" href="index.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-        <section class="main-containers nav-container">
+        <section class="nav-container">
             <header class="page-title">In Work PGMS</header>
             <nav class="nav-bar-container">
                 <ul class="nav-bar">
                     <li class="nav-item">Calculator</li>
                     <li class="nav-item">Tracker</li>
                     <li class="nav-item">To do list</li>
-                    <li class="nav-item">Task magaer</li>
+                    <li class="nav-item">Task manager</li>
                     <li class="nav-item">Tools and Ideas</li>
                 </ul>
                 <div class="theme-language">
-                    <button class="button">
+                    <button type="button" class="button">
 
                     </button>
-                    <button class="button">
+                    <button type="button" class="button">
 
                     </button>
-
-                    
                 </div>
             </nav>
         </section>
-        <section class="main-containers pgm-container">
-            <div class="pgm-container-son "></div>
+        <section class="pgm-container">
             <div class="pgm-container-son"></div>
             <div class="pgm-container-son"></div>
             <div class="pgm-container-son"></div>
-            <div class="pgm-container-son active tools-ideas">
+            <div class="pgm-container-son"></div>
+            <div class="pgm-container-son  active tools-ideas">
                 <div class="pgm-title-container">
                     <h3 class="pgm-title">Tools and Ideas</h3>
                 </div>
-                <div class="pgm"></div>
+                <div class="pgm">
+                    <div class="data-type">
+                        <div class="data-type-box data-tools">
+                            <button type="button" id="tools-data" class="data-type-button ">Tools</button>
+                        </div>
+                        <div class="data-type-box data-ideas">
+                            <button type="button" id="ideas-data" class="data-type-button ">Ideas</button>
+                        </div>
+                        <div class="data-type-box data-info">
+                            <button type="button" id="info-data" class="data-type-button active">Info and Doc</button>
+                        </div>
+                    </div>
+                    <div class="data-result">
+                        <button type="button" id="add-data" class="add-data">+</button>
+                        <div class="data-container">
+                          
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -49,5 +70,7 @@
 
     </footer>
     <!--Scripts Links-->
+    <script src="index.js"></script>
+
 </body>
 </html>

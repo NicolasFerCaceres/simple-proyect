@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --first-color: #19376D;
+    --second-color: #0B2447;
+    --font-color: #fff;
+}
+
 html  {
     font-size: 10px;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -16,37 +22,39 @@ html  {
     grid-template-columns: 1fr 5fr;
 }
 
-.nav-container {
-
-
-}
-
 .page-title {
-    font-size: 3rem;
+    font-size: 2.0rem;
     text-align: center;
+    margin-top: 10px;
     padding: 20px;
     font-weight: 800;
 }
 
-.nav-bar-container {
+.nav-container {
+    background: var(--first-color);
+    color: white;
+}
 
+.nav-bar-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .nav-bar {
-    padding: 40px 0 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     list-style: none;
     font-weight: 800;
 }
 
 .nav-item {
     margin: 20px;
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding: 5px 0px 5px 10px; 
+}
+
+button {
+    cursor: pointer;
 }
 
 /*This is to see how looks the butttons*/
@@ -56,9 +64,6 @@ html  {
     height: 70px;
 }
 
-.pgm-container {
-
-}
 
 /*This is to hide the other pgm while i work and could see how it will look the final result*/
 
@@ -66,18 +71,23 @@ html  {
 .pgm-container-son {
     height: 100%;
     display: none;
+    background: #A5D7E8;
 }
 
-
+/*Pgm container general css*/
 
 .pgm-title-container {
     font-size: 4rem;
     text-align: center;
     padding: 10px;
+    color: var(--second-color);
+
 }
 
 .pgm {
-    background: black;
+    display: grid;
+    grid-template-rows: 35px 1fr;
+   
 }
 
 .pgm-container-son.active {
@@ -87,7 +97,66 @@ html  {
 
 /*Tool and ideas pgm css*/
 
+.data-type {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+.data-type-box {
+    margin: 5px 20px -3px;
+    font-size: 2rem;
+}
 
 
+.data-type-button {
+    margin: 5px 20px 3px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: none;
+    padding: 5px 5px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: var(--second-color);
+    opacity: 0.5;
+    color: var(--font-color);
+}
+
+.data-type-button.active {
+    opacity: 1.0;
+}
+
+.data-result {
+    background: var(--second-color);
+    margin: 0 8% 1% ;
+    border-radius: 2px;
+    position: relative;
+    
+}
+
+.add-data {
+    
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 10px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background: var(--font-color);
+}
+
+.add-data:hover {
+    background: #C9EEFF;
+}
 
 
+.data-container {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    padding: 20px
+}
